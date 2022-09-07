@@ -65,7 +65,7 @@ exports.updateProduct =  (req, res) => {
   }
 };
 exports.deleteProductById = (req, res) => {
-  console.log(req.params.id);
+  
   const productDeleted =Product.findByIdAndDelete(req.params.id,function (err, document) {
     if (err){
         console.log(err)
