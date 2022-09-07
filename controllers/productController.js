@@ -2,7 +2,7 @@
 const Product=require("../models/Products");
 exports.getAllProducts = async (req, res) => {
   
-  const products=await Product.find({productName:"product 1"});
+  const products=await Product.find();
   res.status(200).json({
     status: "success",
     timeOfRequest: req.requestTime,
